@@ -8,6 +8,7 @@
     <title>Servisin</title>
     <link href="dist/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
 </head>
 
 <body>
@@ -43,8 +44,9 @@
 
                     <div class="tw-flex tw-items-center tw-gap-2">
                         <div class="sm:tw-gap-4 sm:tw-flex">
-                            <a class="" href="/login">
-                                <button class="tw-btn tw-btn-outline hover:tw-outline-white">Masuk</button>
+                            <a class="tw-rounded-xl tw-bg-orange-500 tw-outline tw-outline-white tw-outline-2 tw-text-white hover:tw-bg-orange-600 tw-duration-300 tw-px-10 tw-py-2.5 tw-btn-block"
+                                href="/login">
+                                <button type="submit" class="tw-font-poppins">Masuk</button>
                             </a>
                         </div>
 
@@ -63,6 +65,118 @@
         </div>
     </header>
     <!-- Header End -->
+
+    <section class="tw-mt-36">
+        <div class="tw-max-w-screen-2xl tw-px-4 tw-mx-auto sm:tw-px-6 lg:tw-px-12">
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 lg:tw-gap-6 lg:tw-grid-cols-2">
+                <div
+                    class="tw-relative tw-h-64 tw-overflow-hidden tw-rounded-lg sm:tw-h-80 lg:tw-h-full lg:tw-order-last lg:tw-mt-150">
+                    <div id="indicators-carousel" class="relative" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="tw-relative tw-h-56 tw-overflow-hidden tw-rounded-lg md:tw-h-96">
+                            <!-- Item 1 -->
+                            <div class="tw-duration-700 tw-ease-in-out tw-absolute tw-inset-0 tw-transition-all tw-transform tw-translate-x-0 tw-z-20"
+                                data-carousel-item="active">
+                                <img src="https://source.unsplash.com/360x200?programming"
+                                    class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2"
+                                    alt="...">
+                            </div>
+                            <div class="tw-duration-700 tw-ease-in-out tw-absolute tw-inset-0 tw-transition-all tw-transform tw-translate-x-0 tw-z-20"
+                                data-carousel-item="active">
+                                <img src="https://source.unsplash.com/360x200?programming"
+                                    class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2"
+                                    alt="...">
+                            </div>
+                            <div class="tw-duration-700 tw-ease-in-out tw-absolute tw-inset-0 tw-transition-all tw-transform tw-translate-x-0 tw-z-20"
+                                data-carousel-item="active">
+                                <img src="https://source.unsplash.com/360x200?programming"
+                                    class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2"
+                                    alt="...">
+                            </div>
+                            <div class="tw-duration-700 tw-ease-in-out tw-absolute tw-inset-0 tw-transition-all tw-transform tw-translate-x-0 tw-z-20"
+                                data-carousel-item="active">
+                                <img src="https://source.unsplash.com/360x200?programming"
+                                    class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2"
+                                    alt="...">
+                            </div>
+                            <div class="tw-duration-700 tw-ease-in-out tw-absolute tw-inset-0 tw-transition-all tw-transform tw-translate-x-0 tw-z-20"
+                                data-carousel-item="active">
+                                <img src="https://source.unsplash.com/360x200?programming"
+                                    class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div
+                            class="tw-absolute tw-z-30 tw-flex tw-space-x-3 -tw-translate-x-1/2 tw-bottom-5 tw-left-1/2">
+                            <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full tw-bg-white dark:tw-bg-gray-800"
+                                aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full tw-bg-white dark:tw-bg-gray-800"
+                                aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full tw-bg-white dark:tw-bg-gray-800"
+                                aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full tw-bg-white dark:tw-bg-gray-800"
+                                aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full tw-bg-white dark:tw-bg-gray-800"
+                                aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button"
+                            class="tw-absolute tw-top-0 tw-left-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none"
+                            data-carousel-prev="">
+                            <span
+                                class="tw-inline-flex tw-items-center tw-justify-center tw-w-8 tw-h-8 tw-rounded-full sm:tw-w-10 sm:tw-h-10 tw-bg-white/30 dark:tw-bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none">
+                                <svg aria-hidden="true"
+                                    class="tw-w-5 tw-h-5 tw-text-white sm:tw-w-6 sm:tw-h-6 dark:tw-text-gray-800"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                <span class="tw-sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="tw-absolute tw-top-0 tw-right-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none"
+                            data-carousel-next="">
+                            <span
+                                class="tw-inline-flex tw-items-center tw-justify-center tw-w-8 tw-h-8 tw-rounded-full sm:tw-w-10 sm:tw-h-10 tw-bg-white/30 dark:tw-bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none">
+                                <svg aria-hidden="true"
+                                    class="tw-w-5 tw-h-5 tw-text-white sm:tw-w-6 sm:tw-h-6 dark:tw-text-gray-800"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                                <span class="tw-sr-only">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tw-mt-150 lg:tw-py-24 mobile:tw-invisible">
+                    <h2 class="tw-text-3xl tw-font-bold sm:tw-text-4xl">Grow your audience</h2>
+
+                    <p class="tw-mt-4 tw-text-gray-600">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
+                        atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
+                        veniam tempora deserunt? Molestiae eius quidem quam repellat.
+                    </p>
+
+                    <a href="#"
+                        class="tw-inline-flex tw-items-center tw-px-8 tw-py-3 tw-mt-8 tw-text-white tw-bg-indigo-600 tw-border tw-border-indigo-600 tw-rounded hover:tw-bg-transparent hover:tw-text-indigo-600 active:tw-text-indigo-500 focus:tw-outline-none focus:tw-ring">
+                        <span class="tw-text-sm tw-font-medium"> Get Started </span>
+
+                        <svg class="tw-w-5 tw-h-5 tw-ml-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="hometext" class="tw-pt-150" name="">
         <div class="tw-container">
@@ -85,7 +199,7 @@
             <div class="tw-grid tw-grid-cols-1 tw-gap-8 lg:tw-grid-cols-3">
                 <div>
                     <div class="tw-flex tw-justify-center tw-text-teal-600 sm:tw-justify-start">
-                        <img src="src/img/logo-footer.png" class="tw-h-86 tw-max-w-xs" alt="">
+                        <img src="src/img/logo-footer.png" class="tw-h-14 tw-max-w-xs" alt="">
                     </div>
 
                     <p
@@ -330,6 +444,6 @@
     <!-- Footer End -->
 
 </body>
-
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 
 </html>

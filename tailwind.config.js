@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   prefix: "tw-",
-  content: ["index.html"],
+  content: ["index.html","./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       fontFamily: {
@@ -13,6 +13,9 @@ module.exports = {
         468: "468px",
         86: "86px",
       },
+      height: {
+        150: "150px",
+      },
       colors: {
         orange: "#FF7F00",
       },
@@ -21,5 +24,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("flowbite/plugin"), require("daisyui")],
+  plugins: [
+  require('flowbite/plugin'), 
+  require('daisyui')
+],
 };
