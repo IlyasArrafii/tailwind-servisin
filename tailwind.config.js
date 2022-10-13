@@ -21,7 +21,6 @@ module.exports = {
       margin: {
         30: "30px",
       },
-
       colors: {
         orange: "#FF7F00",
       },
