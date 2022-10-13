@@ -8,6 +8,7 @@ module.exports = {
         poppins: ["poppins"],
       },
       padding: {
+        10: "10px",
         50: "50px",
         150: "150px",
         468: "468px",
@@ -25,7 +26,7 @@ module.exports = {
         orange: "#FF7F00",
       },
       screens: {
-        mobile: { min: "280px", max: "540px" },
+        mobile: { max: "540px" },
       },
     },
   },
