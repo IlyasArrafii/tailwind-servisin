@@ -2492,14 +2492,6 @@ html {
   margin-bottom: 3rem;
 }
 
-.tw-mb-4 {
-  margin-bottom: 1rem;
-}
-
-.tw-mt-1 {
-  margin-top: 0.25rem;
-}
-
 .tw-mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -2510,6 +2502,10 @@ html {
 
 .tw-mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.tw-mb-4 {
+  margin-bottom: 1rem;
 }
 
 .tw-mb-1 {
@@ -2540,8 +2536,8 @@ html {
   margin-top: 3rem;
 }
 
-.tw-mt-2 {
-  margin-top: 0.5rem;
+.tw-mt-5 {
+  margin-top: 1.25rem;
 }
 
 .tw-block {
@@ -2904,6 +2900,11 @@ html {
   line-height: 1.75rem;
 }
 
+.tw-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .tw-text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -2917,11 +2918,6 @@ html {
 .tw-text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.tw-text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .tw-font-semibold {
@@ -2938,6 +2934,10 @@ html {
 
 .tw-font-medium {
   font-weight: 500;
+}
+
+.tw-font-black {
+  font-weight: 900;
 }
 
 .tw-not-italic {
@@ -3193,16 +3193,6 @@ html {
     line-height: 2.5rem;
   }
 
-  .sm\:tw-text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:tw-text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:tw-text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -3408,16 +3398,6 @@ html {
   .lg\:tw-text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .lg\:tw-text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:tw-text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
