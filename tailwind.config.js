@@ -28,7 +28,8 @@ module.exports = {
         orange: "#FF7F00",
       },
       screens: {
-        mobile: { max: "540px" },
+        mobile: { max: "639px" },
+        tablet: { min: "768px", max: "1023px" },
       },
     },
   },
