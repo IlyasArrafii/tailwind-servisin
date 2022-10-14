@@ -2496,16 +2496,16 @@ html {
   margin-bottom: 2.5rem;
 }
 
+.tw-mt-5 {
+  margin-top: 1.25rem;
+}
+
 .tw-mb-3 {
   margin-bottom: 0.75rem;
 }
 
 .tw-mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.tw-mb-4 {
-  margin-bottom: 1rem;
 }
 
 .tw-mb-1 {
@@ -2534,10 +2534,6 @@ html {
 
 .tw-mt-12 {
   margin-top: 3rem;
-}
-
-.tw-mt-5 {
-  margin-top: 1.25rem;
 }
 
 .tw-block {
@@ -2596,12 +2592,12 @@ html {
   height: 5rem;
 }
 
-.tw-h-6 {
-  height: 1.5rem;
-}
-
 .tw-h-14 {
   height: 3.5rem;
+}
+
+.tw-h-6 {
+  height: 1.5rem;
 }
 
 .tw-w-full {
@@ -2915,11 +2911,6 @@ html {
   line-height: 1.5rem;
 }
 
-.tw-text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .tw-font-semibold {
   font-weight: 600;
 }
@@ -2934,10 +2925,6 @@ html {
 
 .tw-font-medium {
   font-weight: 500;
-}
-
-.tw-font-black {
-  font-weight: 900;
 }
 
 .tw-not-italic {
@@ -3205,6 +3192,11 @@ html {
     margin-right: 6rem;
   }
 
+  .md\:tw-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:tw-mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -3233,6 +3225,10 @@ html {
     height: 24rem;
   }
 
+  .md\:tw-w-full {
+    width: 100%;
+  }
+
   .md\:tw-grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -3251,6 +3247,10 @@ html {
 
   .md\:tw-rounded-lg {
     border-radius: 0.5rem;
+  }
+
+  .md\:tw-p-0 {
+    padding: 0px;
   }
 
   .md\:tw-px-10 {
@@ -3393,11 +3393,6 @@ html {
   .lg\:tw-text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .lg\:tw-text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 }
 
