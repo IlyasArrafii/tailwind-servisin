@@ -2476,6 +2476,16 @@ html {
   margin-right: auto;
 }
 
+.tw-mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.tw-mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .tw-mt-30 {
   margin-top: 30px;
 }
@@ -2488,8 +2498,20 @@ html {
   margin-top: 2.5rem;
 }
 
-.tw-mt-12 {
-  margin-top: 3rem;
+.tw-mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.tw-mt-3 {
+  margin-top: 0.75rem;
+}
+
+.tw-mb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.tw-mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .tw-mb-12 {
@@ -2512,14 +2534,6 @@ html {
   margin-bottom: 1.5rem;
 }
 
-.tw-mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.tw-mt-3 {
-  margin-top: 0.75rem;
-}
-
 .tw-mt-8 {
   margin-top: 2rem;
 }
@@ -2534,6 +2548,10 @@ html {
 
 .-tw-mt-0 {
   margin-top: -0px;
+}
+
+.tw-mt-12 {
+  margin-top: 3rem;
 }
 
 .tw-block {
@@ -2584,8 +2602,16 @@ html {
   height: 1.25rem;
 }
 
+.tw-h-20 {
+  height: 5rem;
+}
+
 .tw-h-52 {
   height: 13rem;
+}
+
+.tw-h-44 {
+  height: 11rem;
 }
 
 .tw-h-14 {
@@ -2594,22 +2620,6 @@ html {
 
 .tw-h-6 {
   height: 1.5rem;
-}
-
-.tw-h-24 {
-  height: 6rem;
-}
-
-.tw-h-80 {
-  height: 20rem;
-}
-
-.tw-h-20 {
-  height: 5rem;
-}
-
-.tw-h-44 {
-  height: 11rem;
 }
 
 .tw-w-full {
@@ -2622,6 +2632,10 @@ html {
 
 .tw-w-5 {
   width: 1.25rem;
+}
+
+.tw-w-20 {
+  width: 5rem;
 }
 
 .tw-w-52 {
@@ -2689,6 +2703,10 @@ html {
 
 .tw-flex-wrap {
   flex-wrap: wrap;
+}
+
+.tw-content-center {
+  align-content: center;
 }
 
 .tw-items-start {
@@ -2764,8 +2782,17 @@ html {
   border-top-right-radius: 0.75rem;
 }
 
+.tw-border {
+  border-width: 1px;
+}
+
 .tw-border-t {
   border-top-width: 1px;
+}
+
+.tw-border-\[\#fff\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .tw-border-gray-100 {
@@ -2785,6 +2812,11 @@ html {
 .tw-bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.tw-bg-\[\#fff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .tw-bg-white {
@@ -2849,20 +2881,16 @@ html {
   padding-bottom: 0.5rem;
 }
 
-.tw-pt-6 {
-  padding-top: 1.5rem;
-}
-
-.tw-pb-5 {
-  padding-bottom: 1.25rem;
-}
-
 .tw-pt-12 {
   padding-top: 3rem;
 }
 
 .tw-pb-16 {
   padding-bottom: 4rem;
+}
+
+.tw-pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .tw-pt-2 {
@@ -2875,6 +2903,10 @@ html {
 
 .tw-pb-20 {
   padding-bottom: 5rem;
+}
+
+.tw-pt-6 {
+  padding-top: 1.5rem;
 }
 
 .tw-text-left {
@@ -2926,12 +2958,12 @@ html {
   font-weight: 600;
 }
 
-.tw-font-bold {
-  font-weight: 700;
-}
-
 .tw-font-medium {
   font-weight: 500;
+}
+
+.tw-font-bold {
+  font-weight: 700;
 }
 
 .tw-not-italic {
@@ -3165,10 +3197,6 @@ html {
     justify-content: space-between;
   }
 
-  .sm\:tw-gap-4 {
-    gap: 1rem;
-  }
-
   .sm\:tw-gap-2 {
     gap: 0.5rem;
   }
@@ -3176,11 +3204,6 @@ html {
   .sm\:tw-px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .sm\:tw-px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .sm\:tw-px-3\.5 {
@@ -3191,6 +3214,11 @@ html {
   .sm\:tw-px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+
+  .sm\:tw-px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:tw-pb-3 {
@@ -3443,6 +3471,10 @@ html {
     margin-top: 1.25rem;
   }
 
+  .xl\:tw-grid {
+    display: grid;
+  }
+
   .xl\:tw-h-20 {
     height: 5rem;
   }
@@ -3455,12 +3487,12 @@ html {
     width: 5rem;
   }
 
-  .xl\:tw-w-80 {
-    width: 20rem;
-  }
-
   .xl\:tw-w-full {
     width: 100%;
+  }
+
+  .xl\:tw-grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .xl\:tw-rounded-lg {
@@ -3481,20 +3513,24 @@ html {
     visibility: hidden;
   }
 
+  .mobile\:tw-grid {
+    display: grid;
+  }
+
+  .mobile\:tw-h-11 {
+    height: 2.75rem;
+  }
+
   .mobile\:tw-h-20 {
     height: 5rem;
   }
 
-  .mobile\:tw-h-1 {
-    height: 0.25rem;
-  }
-
-  .mobile\:tw-h-9 {
-    height: 2.25rem;
-  }
-
   .mobile\:tw-h-36 {
     height: 9rem;
+  }
+
+  .mobile\:tw-w-10 {
+    width: 2.5rem;
   }
 
   .mobile\:tw-w-20 {
@@ -3503,6 +3539,10 @@ html {
 
   .mobile\:tw-w-full {
     width: 100%;
+  }
+
+  .mobile\:tw-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .mobile\:tw-text-center {
