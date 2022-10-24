@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   prefix: "tw-",
-  content: ["*.html", "./node_modules/flowbite/**/*.js"],
+  content: ["*.html", "node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       fontFamily: {
@@ -25,6 +25,9 @@ module.exports = {
         30: "30px",
       },
       colors: {
+        orange: "#FF7F00",
+      },
+      backgroundColor:{
         orange: "#FF7F00",
       },
       screens: {
