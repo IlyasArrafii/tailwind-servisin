@@ -3000,6 +3000,18 @@ html {
   margin-bottom: 1rem;
 }
 
+.tw-mr-2 {
+  margin-right: 0.5rem;
+}
+
+.tw-mt-1 {
+  margin-top: 0.25rem;
+}
+
+.tw-mt-9 {
+  margin-top: 2.25rem;
+}
+
 .tw-block {
   display: block;
 }
@@ -3070,6 +3082,22 @@ html {
 
 .tw-h-4 {
   height: 1rem;
+}
+
+.tw-h-11 {
+  height: 2.75rem;
+}
+
+.tw-h-\[250px\] {
+  height: 250px;
+}
+
+.tw-h-\[150px\] {
+  height: 150px;
+}
+
+.tw-h-\[90px\] {
+  height: 90px;
 }
 
 .tw-w-full {
@@ -3155,6 +3183,10 @@ html {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.tw-flex-col {
+  flex-direction: column;
+}
+
 .tw-flex-wrap {
   flex-wrap: wrap;
 }
@@ -3205,6 +3237,12 @@ html {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.tw-space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .tw-overflow-hidden {
   overflow: hidden;
 }
@@ -3234,6 +3272,11 @@ html {
 .tw-rounded-t-xl {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+
+.tw-rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .tw-border {
@@ -3305,6 +3348,10 @@ html {
   padding: 0.5rem;
 }
 
+.tw-p-6 {
+  padding: 1.5rem;
+}
+
 .tw-px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -3365,6 +3412,11 @@ html {
   padding-bottom: 0.25rem;
 }
 
+.tw-px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .tw-pt-12 {
   padding-top: 3rem;
 }
@@ -3395,6 +3447,46 @@ html {
 
 .tw-pt-2 {
   padding-top: 0.5rem;
+}
+
+.tw-pt-7 {
+  padding-top: 1.75rem;
+}
+
+.tw-pb-11 {
+  padding-bottom: 2.75rem;
+}
+
+.tw-pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.tw-pb-12 {
+  padding-bottom: 3rem;
+}
+
+.tw-pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.tw-pt-10 {
+  padding-top: 10px;
+}
+
+.tw-pt-\[350px\] {
+  padding-top: 350px;
+}
+
+.tw-pt-20 {
+  padding-top: 5rem;
+}
+
+.tw-pb-24 {
+  padding-bottom: 6rem;
+}
+
+.tw-pt-24 {
+  padding-top: 6rem;
 }
 
 .tw-text-left {
@@ -3459,12 +3551,28 @@ html {
   font-weight: 500;
 }
 
+.tw-font-light {
+  font-weight: 300;
+}
+
+.tw-font-normal {
+  font-weight: 400;
+}
+
 .tw-not-italic {
   font-style: normal;
 }
 
 .tw-leading-relaxed {
   line-height: 1.625;
+}
+
+.tw-leading-tight {
+  line-height: 1.25;
+}
+
+.tw-tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .tw-text-teal-600 {
@@ -3561,6 +3669,10 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:tw-bg-orange\/90:hover {
+  background-color: rgb(255 127 0 / 0.9);
+}
+
 .hover\:tw-text-gray-400:hover {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -3576,6 +3688,11 @@ html {
   color: rgb(255 127 0 / var(--tw-text-opacity));
 }
 
+.hover\:tw-no-underline:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
 .hover\:tw-opacity-80:hover {
   opacity: 0.8;
 }
@@ -3588,6 +3705,12 @@ html {
 .focus\:tw-outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus\:tw-ring-4:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .focus\:tw-ring-orange:focus {
@@ -3622,6 +3745,11 @@ html {
 .tw-dark .dark\:tw-text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.tw-dark .dark\:tw-text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .tw-dark .tw-group:hover .dark\:group-hover\:tw-bg-gray-800\/60 {
@@ -3933,6 +4061,10 @@ html {
     max-width: 20rem;
   }
 
+  .sm\:tw-max-w-md {
+    max-width: 28rem;
+  }
+
   .sm\:tw-flex-1 {
     flex: 1 1 0%;
   }
@@ -3955,6 +4087,10 @@ html {
 
   .sm\:tw-gap-2 {
     gap: 0.5rem;
+  }
+
+  .sm\:tw-p-8 {
+    padding: 2rem;
   }
 
   .sm\:tw-px-6 {
@@ -4007,6 +4143,11 @@ html {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .sm\:tw-text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -4023,6 +4164,10 @@ html {
     margin-top: -3rem;
   }
 
+  .md\:tw-mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:tw-flex {
     display: flex;
   }
@@ -4035,6 +4180,10 @@ html {
     height: 24rem;
   }
 
+  .md\:tw-h-screen {
+    height: 100vh;
+  }
+
   .md\:tw-grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -4045,6 +4194,12 @@ html {
 
   .md\:tw-gap-8 {
     gap: 2rem;
+  }
+
+  .md\:tw-space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .md\:tw-rounded-lg {
@@ -4089,6 +4244,11 @@ html {
   .md\:tw-text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:tw-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:tw-text-black {
@@ -4345,6 +4505,31 @@ html {
     margin-right: auto;
   }
 
+  .lg\:tw-mx-\[250px\] {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  .lg\:tw-mx-\[400px\] {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  .lg\:tw-mx-\[500px\] {
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+
+  .lg\:tw-mx-\[450px\] {
+    margin-left: 450px;
+    margin-right: 450px;
+  }
+
+  .lg\:tw-mx-\[350px\] {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
   .lg\:-tw-mt-10 {
     margin-top: -2.5rem;
   }
@@ -4429,6 +4614,11 @@ html {
   .lg\:tw-px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .lg\:tw-py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:tw-pt-24 {
@@ -4789,6 +4979,10 @@ html {
     border-radius: 0.5rem;
   }
 
+  .xl\:tw-p-0 {
+    padding: 0px;
+  }
+
   .xl\:tw-text-right {
     text-align: right;
   }
@@ -5074,6 +5268,18 @@ html {
     height: 9rem;
   }
 
+  .mobile\:tw-h-\[50px\] {
+    height: 50px;
+  }
+
+  .mobile\:tw-h-\[60px\] {
+    height: 60px;
+  }
+
+  .mobile\:tw-h-\[65px\] {
+    height: 65px;
+  }
+
   .mobile\:tw-w-14 {
     width: 3.5rem;
   }
@@ -5354,6 +5560,21 @@ html {
   .tablet\:tw-mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .tablet\:tw-mx-\[284px\] {
+    margin-left: 284px;
+    margin-right: 284px;
+  }
+
+  .tablet\:tw-mx-\[150px\] {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .tablet\:tw-mx-\[170px\] {
+    margin-left: 170px;
+    margin-right: 170px;
   }
 
   .tablet\:tw-mt-1 {
