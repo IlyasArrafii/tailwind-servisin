@@ -2774,6 +2774,10 @@ html {
   margin-top: 30px;
 }
 
+.tw-ml-3 {
+  margin-left: 0.75rem;
+}
+
 .tw-block {
   display: block;
 }
@@ -2846,6 +2850,10 @@ html {
   height: 90px;
 }
 
+.tw-h-4 {
+  height: 1rem;
+}
+
 .tw-w-full {
   width: 100%;
 }
@@ -2868,6 +2876,10 @@ html {
 
 .tw-w-52 {
   width: 13rem;
+}
+
+.tw-w-4 {
+  width: 1rem;
 }
 
 .tw-max-w-screen-xl {
@@ -2999,6 +3011,10 @@ html {
 
 .tw-rounded-full {
   border-radius: 9999px;
+}
+
+.tw-rounded {
+  border-radius: 0.25rem;
 }
 
 .tw-rounded-t-xl {
