@@ -2953,6 +2953,10 @@ html {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.tw-grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .tw-flex-col {
   flex-direction: column;
 }
@@ -3097,6 +3101,11 @@ html {
 
 .tw-bg-white\/30 {
   background-color: rgb(255 255 255 / 0.3);
+}
+
+.tw-bg-\[\#bd6464\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(189 100 100 / var(--tw-bg-opacity));
 }
 
 .tw-bg-\[\#D9D9D9\] {
@@ -3294,6 +3303,11 @@ html {
   font-size: 35px;
 }
 
+.tw-text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .tw-font-bold {
   font-weight: 700;
 }
@@ -3312,6 +3326,10 @@ html {
 
 .tw-font-light {
   font-weight: 300;
+}
+
+.tw-font-extrabold {
+  font-weight: 800;
 }
 
 .tw-not-italic {
@@ -3492,11 +3510,6 @@ html {
 .focus\:tw-ring-orange:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 127 0 / var(--tw-ring-opacity));
-}
-
-.focus\:tw-ring-\[\#D9D9D9\]:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(217 217 217 / var(--tw-ring-opacity));
 }
 
 .tw-group:hover .group-hover\:tw-bg-white\/50 {
@@ -4398,6 +4411,11 @@ html {
     margin-right: auto;
   }
 
+  .xl\:tw-mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .xl\:tw-grid {
     display: grid;
   }
@@ -4508,6 +4526,46 @@ html {
   .mobile\:tw-mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .mobile\:tw-mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .mobile\:tw-mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .mobile\:tw-mx-\[2px\] {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .mobile\:tw-mx-\[1px\] {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .mobile\:tw-mx-\[1\.5px\] {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .mobile\:tw-mx-\[1\.9px\] {
+    margin-left: 1.9px;
+    margin-right: 1.9px;
+  }
+
+  .mobile\:tw-mx-\[1\.7px\] {
+    margin-left: 1.7px;
+    margin-right: 1.7px;
+  }
+
+  .mobile\:tw-mx-\[1\.6px\] {
+    margin-left: 1.6px;
+    margin-right: 1.6px;
   }
 
   .mobile\:tw-mt-\[50px\] {
@@ -4625,10 +4683,6 @@ html {
     padding-top: 0.25rem;
   }
 
-  .mobile\:tw-pb-4 {
-    padding-bottom: 1rem;
-  }
-
   .mobile\:tw-text-center {
     text-align: center;
   }
@@ -4640,6 +4694,11 @@ html {
   .mobile\:tw-text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .mobile\:tw-text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -4744,10 +4803,6 @@ html {
 
   .tablet\:tw-w-\[288px\] {
     width: 288px;
-  }
-
-  .tablet\:tw-w-full {
-    width: 100%;
   }
 
   .tablet\:tw-flex-1 {
