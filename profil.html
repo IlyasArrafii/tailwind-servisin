@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servisin</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <div class=" tw-bg-orange mobile:tw-h-[120px]">
+            <div class="tw-px-4 tw-mx-auto tw-max-w-screen-xl sm:tw-px-6 lg:tw-px-3">
+                <div class="tw-flex tw-items-center tw-justify-between tw-h-16 tw-font-poppins">
+                    <div class="mobile:tw-mt-[50px] tw-w-full sm:tw-flex-1 tablet:tw-flex-1 lg:tw-flex-1 xl:tw-flex-1">
+                        <a class="tw-block tw-text-teal-600" href="/">
+                            <img src="src/img/logo-header.png" class="tw-h-10 tw-max-w-lg tw-items-center" alt="">
+                            <span
+                                class="tw-not-sr-only tw-text-white tw-text-sm tw-max-w-lg sm:tw-sr-only tablet:tw-sr-only lg:tw-sr-only xl:tw-sr-only">Minggu,
+                                23 Oktober
+                                2022</span>
+                        </a>
+                    </div>
+
+                    <div class="md:tw-flex md:tw-items-center mobile:tw-hidden">
+                        <div class="tw-items-center tw-gap-2">
+                            <div class="sm:tw-gap-2 sm:tw-flex">
+                                <a class="tw-bg-orange-500 tw-text-white tw-transition hover:tw-text-gray-400 tw-duration-300 tw-px-7 sm:tw-px-3.5 tw-py-2.5"
+                                    href="index.html">
+                                    Beranda
+                                </a>
+                                <a class="tw-bg-orange-500 tw-text-white tw-transition hover:tw-text-gray-400 tw-duration-300 tw-px-7 sm:tw-px-3.5 tw-py-2.5"
+                                    href="pesanan.html">
+                                    Pesanan
+                                </a>
+                                <a class="tw-rounded-xl tw-bg-orange-500 tw-outline tw-outline-white tw-outline-2 tw-text-white hover:tw-bg-orange-600 tw-duration-300 tw-px-9 tw-py-2.5 tw-btn-block"
+                                    href="login.html">
+                                    Masuk
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Profil Start -->
+    <section>
+        <div class="tw-container tw-max-w-full tw-rounded-b-2xl tw-bg-orange tw-px-0 tw-shadow-md md:tw-max-w-full lg:tw-max-w-full"
+            style="background-color: #ff7f00; padding-top: 5%;">
+            <div class="tw-pb-2">
+                <div class="tw-mx-auto tw-text-center md:tw-text-center">
+                    <div class="tw-mx-auto">
+                        <span class="tw-font-poppins tw-mx-auto tw-text-center tw-font-bold tw-text-white">Profil
+                            Akun</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tw-container tw-mx-auto tw-mt-12">
+            <div class="tw-mx-3">
+                <div class="tw-mt-1 tw-rounded-xl tw-border tw-border-[#fff] tw-shadow-md">
+                    <img src="assets/img/icon1/profile.png" class="tw-mx-auto tw-mb-1 tw-pt-2" style="width: 90px;">
+
+                    <div class="tw-mx-auto">
+                        <div class="tw-flex tw-flex-row">
+                            <img src="assets/img/icon1/profile.png" class="tw-ml-3 tw-p-2" style="width: 35px;">
+                            <span class="tw-font-poppins tw-mt-2 tw-ml-1 tw-text-center tw-text-sm">{{
+                                Auth::user()->name
+                                }}</span>
+                        </div>
+                    </div>
+                    <div class="tw-mx-auto">
+                        <div class="tw-flex tw-flex-row">
+                            <img src="assets/img/icon1/telephone.png" class="tw-ml-3 tw-p-2" style="width: 35px;">
+                            <span class="tw-font-poppins tw-mt-2 tw-ml-1 tw-text-center tw-text-sm"></span>
+                        </div>
+                    </div>
+                    <div class="tw-mx-auto">
+                        <div class="tw-flex tw-flex-row">
+                            <img src="assets/img/icon1/at.png" class="tw-ml-3 tw-p-2" style="width: 35px;">
+                            <span class="tw-font-poppins tw-mt-2 tw-ml-1 tw-text-center tw-text-sm">{{
+                                Auth::user()->email
+                                }}</span>
+                        </div>
+                    </div>
+                    <div class="tw-container tw-mx-auto tw-mb-5 tw-mt-5">
+                        <div class="tw-mx-auto tw-flex tw-flex-wrap">
+                            <div class="tw-mx-16 tw-flex">
+                                <!-- <div class="tw-mx-3 tw-mt-1">
+                                        <button type="submit" class="tw-bg-orange-400 dark:tw-bg-orange-400 tw-w-full tw-rounded-lg tw-px-3 tw-py-2 tw-text-center tw-text-sm tw-font-medium tw-text-white tw-no-underline hover:tw-bg-[#ff7f00] dark:hover:tw-bg-[#ff7f00]">Edit Profil</button>
+                                    </div> -->
+                                <div class="tw-mx-3 tw-mt-1 tw-text-center">
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <button type="submit"
+                                            class="tw-bg-orange-400 dark:tw-bg-orange-400 tw-w-full tw-rounded-lg tw-px-3 tw-py-2 tw-text-center tw-text-sm tw-font-medium tw-text-white tw-no-underline hover:tw-bg-[#ff7f00] dark:hover:tw-bg-[#ff7f00]"><a
+                                                :href="route('logout')" onclick="event.preventDefault();
+                                                    this.closest('form').submit();">
+                                                {{ __('Keluar Akun') }}
+                                            </a></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="tw-font-poppins tw-my-1 tw-mt-1 tw-mb-3 tw-px-3 tw-text-sm"></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Profil End -->
+</body>
+
+</html>

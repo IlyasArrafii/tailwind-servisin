@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servisin</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+        integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+
+<body>
+    <!-- Fixed Nav Start -->
+    <nav
+        class="tw-fixed tw-bottom-0 tw-inset-x-0 tw-bg-slate-100 tw-flex tw-justify-between tw-text-sm tw-text-black tw-rounded-t-xl tw-font-poppins lg:tw-invisible xl:tw-invisible sm:tw-invisible">
+
+        <a href="#" class="tw-w-full tw-block tw-py-2 tw-px-3 tw-text-center hover:tw-text-orange">
+            <svg class="tw-h-8 tw-w-8 tw-mx-auto tw-mb-1" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+            </svg>
+            <div class="tw-text-sm tw-font-poppins">
+                Pesanan
+            </div>
+        </a>
+
+        <a href="#" class="tw-w-full tw-block tw-py-2 tw-px-3 tw-text-center hover:tw-text-orange">
+            <svg class="tw-h-8 tw-w-8 tw-mx-auto tw-mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            <div class="tw-text-sm tw-font-poppins">
+                Beranda
+            </div>
+        </a>
+
+        <a href="#" class="tw-w-full tw-block tw-py-2 tw-px-3 tw-text-center hover:tw-text-orange">
+            <svg class="tw-h-8 tw-w-8 tw-mx-auto tw-mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div class="tw-text-sm tw-font-poppins">
+                Akun
+            </div>
+        </a>
+    </nav>
+    <!-- Fixed Nav End -->
+
+
+    <!-- Register View Start -->
+    <section class="tw-bg-orange tw-min-h-full tw-pb-28 tw-pt-28 mobile:tw-pt-1 mobile:tw-pb-16 xl:tw-min-h-max">
+        <div
+            class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-px-4 tw-h-full tw-py-8 tw-mx-auto md:tw-h-screen lg:tw-py-0">
+            <a href="#" class="tw-flex tw-items-center tw-mb-6 tw-text-2xl tw-font-semibold tw-text-gray-900">
+                <img src="src/img/logo-header.png" class="tw-h-[90px] mobile:tw-h-[65px] tw-max-w-lg tw-mx-auto" alt="">
+            </a>
+            <div class="tw-w-full tw-bg-white tw-rounded-lg tw-shadow md:tw-mt-0 sm:tw-max-w-md xl:tw-p-0">
+                <div class="tw-p-6 tw-space-y-4 tw-mx-auto md:tw-space-y-6 sm:tw-p-8 tw-font-poppins">
+                    <h1 class="tw-text-xl tw-font-semibold tw-text-gray-900 md:tw-text-2xl">
+                        Daftar Akun <br>
+                        <span class="tw-text-sm tw-font-poppins tw-font-normal">Silahkan mengisi form pendaftaran
+                            akun</span>
+                    </h1>
+                    <form class="tw-space-y-4 md:tw-space-y-6" action="#">
+                        <input type="text" class="tw-form-control" name="lat" id="lat">
+                        <input type="text" class="tw-form-control" name="lon" id="lon">
+                        <div>
+                            <input type="text" name="name" id="name"
+                                class="tw-bg-gray-50 tw-border tw-border-gray-300 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-orange focus:tw-border-orange tw-block tw-w-full tw-p-2.5"
+                                required placeholder="Nama Lengkap">
+                        </div>
+                        <div>
+                            <input type="text" name="nomor" id="nomor"
+                                class="tw-bg-gray-50 tw-border tw-border-gray-300 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-orange focus:tw-border-orange tw-block tw-w-full tw-p-2.5"
+                                required placeholder="Nomor WhatsApp">
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email"
+                                class="tw-bg-gray-50 tw-border tw-border-gray-300 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-orange focus:tw-border-orange tw-block tw-w-full tw-p-2.5"
+                                required placeholder="Email">
+                        </div>
+
+
+                        <div class="">
+                            <div class="tw-flex tw-justify-between">
+                                <input type="search" name="addr" id="addr"
+                                    class="tw-block tw-p-2.5 tw-pl-10 tw-w-full tw-text-sm tw-text-gray-900 tw-bg-gray-50 tw-rounded-lg tw-border tw-border-gray-300 focus:tw-ring-orange focus:tw-border-orange dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Alamat">
+                                <div class="tw-px-1 tw-text-center">
+                                    <button type="button"
+                                        class="tw-text-white tw-right-2.5 tw-bottom-2.5 tw-bg-orange hover:tw-bg-orange/90 focus:tw-ring-4 focus:tw-outline-none focus:tw-ring-orange tw-font-medium tw-rounded-lg tw-text-sm tw-px-2 tw-py-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                        onclick="addr_search();">Cari</button>
+                                </div>
+                            </div>
+                            <div id="results"
+                                class="clearalamat tw-mt-2 tw-text-xs tw-font-poppins tw-text-red-600 hover:tw-cursor-pointer hover:tw-underline"
+                                name="alamat">
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="text" name="detailalamat" id="detailalamat"
+                                class="tw-bg-gray-50 tw-border tw-border-gray-300 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-orange focus:tw-border-orange tw-block tw-w-full tw-p-2.5"
+                                required placeholder="Detail Alamat">
+                            <div class="tw-mt-2 tw-text-left tw-text-xs tw-text-red-500">
+                                * Silahkan mengisi detail alamat (Jalan Nomor Rumah, RT/RW) dan detail rumah
+                            </div>
+                        </div>
+                        <div>
+                            <input type="password" name="password" id="password"
+                                class="tw-bg-gray-50 tw-border tw-border-gray-300 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-orange focus:tw-border-orange tw-block tw-w-full tw-p-2.5"
+                                required placeholder="Password Min. 8 Karakter">
+                        </div>
+                        <div>
+                            <input type="password" name="password_confirmation" id="password_confirmation"
+                                class="tw-bg-gray-50 tw-border tw-border-gray-300 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-orange focus:tw-border-orange tw-block tw-w-full tw-p-2.5"
+                                required placeholder="Konfirmasi Password">
+                        </div>
+                        <button type="submit"
+                            class="tw-w-full tw-text-white tw-bg-orange hover:tw-bg-orange/90 focus:tw-ring-4 focus:tw-outline-none focus:tw-ring-orange tw-font-medium tw-rounded-lg tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">Daftar</button>
+                        <p
+                            class="tw-text-sm tw-font-poppins tw-font-light tw-text-gray-500 dark:tw-text-gray-400 tw-text-center">
+                            Sudah Punya Akun ? <a href="login.html"
+                                class="tw-font-bold tw-text-black hover:tw-no-underline hover:tw-text-orange">Masuk
+                                Disini</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="tw-visible"></div>
+    </section>
+    <!-- Register View End -->
+</body>
+<script type="text/javascript">
+    // Ambil Data Address
+    $(document).ready(function () {
+        $(document).on('click', '.address', function () {
+            var alamat = $(this).text()
+            $('#addr').val(alamat).closest('div')
+        })
+    })
+
+    // Indonesia
+    var startlat = -6.200000;
+    var startlon = 106.816666;
+
+    var options = {
+        center: [startlat, startlon],
+        zoom: 9
+    }
+
+    document.getElementById('lat').value = startlat;
+    document.getElementById('lon').value = startlon;
+
+    var map = L.map('map', options);
+    var nzoom = 12;
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: 'OSM'
+    }).addTo(map);
+
+    var myMarker = L.marker([startlat, startlon], {
+        title: "Coordinates",
+        alt: "Coordinates",
+        draggable: true
+    }).addTo(map).on('dragend', function () {
+        var lat = myMarker.getLatLng().lat.toFixed(8);
+        var lon = myMarker.getLatLng().lng.toFixed(8);
+        var czoom = map.getZoom();
+        if (czoom < 18) {
+            nzoom = czoom + 2;
+        }
+        if (nzoom > 18) {
+            nzoom = 18;
+        }
+        if (czoom != 18) {
+            map.setView([lat, lon], nzoom);
+        } else {
+            map.setView([lat, lon]);
+        }
+        document.getElementById('lat').value = lat;
+        document.getElementById('lon').value = lon;
+        myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
+    });
+
+    function chooseAddr(lat1, lng1) {
+        myMarker.closePopup();
+        map.setView([lat1, lng1], 18);
+        myMarker.setLatLng([lat1, lng1]);
+        lat = lat1.toFixed(8);
+        lon = lng1.toFixed(8);
+        document.getElementById('lat').value = lat;
+        document.getElementById('lon').value = lon;
+        myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
+    }
+
+    function myFunction(arr) {
+        var out = "";
+        var i;
+
+        if (arr.length > 0) {
+            for (i = 0; i < arr.length; i++) {
+                out += "<div class='address' onclick='chooseAddr(" + arr[i].lat + ", " + arr[i].lon + ");return false;'>" + arr[i].display_name + "</div>";
+            }
+            document.getElementById('results').innerHTML = out;
+        } else {
+            document.getElementById('results').innerHTML = "Tidak menemukan alamat anda, Silahkan masukkan nama desa atau kecamatan";
+        }
+    }
+
+    function addr_search() {
+        var inp = document.getElementById("addr");
+        var xmlhttp = new XMLHttpRequest();
+        var url = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + inp.value;
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var myArr = JSON.parse(this.responseText);
+                myFunction(myArr);
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    }
+</script>
+
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+</html>
