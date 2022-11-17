@@ -3261,6 +3261,10 @@ html {
   padding: 35px;
 }
 
+.tw-p-1 {
+  padding: 0.25rem;
+}
+
 .tw-px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
