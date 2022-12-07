@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   prefix: "tw-",
-  content: ["*.html", "node_modules/flowbite/**/*.js"],
+  content: ["*.html", "node_modules/flowbite/**/*.js",'./node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
     extend: {
       fontFamily: {
@@ -36,5 +36,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("flowbite/plugin"), require("daisyui"), require('@tailwindcss/typography')],
+  plugins: [require("flowbite/plugin"), require("daisyui"), require('@tailwindcss/typography'),require('tw-elements/dist/plugin')],
 };

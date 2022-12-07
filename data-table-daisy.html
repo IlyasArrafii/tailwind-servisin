@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!--Responsive Extension Datatables CSS-->
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+    <style>
+        /*Form fields*/
+        .dataTables_wrapper select,
+        .dataTables_wrapper .dataTables_filter input {
+            color: #4a5568;
+            /*text-gray-700*/
+            padding-left: 1rem;
+            /*pl-4*/
+            padding-right: 1.5rem;
+            /*pl-4*/
+            padding-top: .5rem;
+            /*pl-2*/
+            padding-bottom: .5rem;
+            /*pl-2*/
+            line-height: 1.25;
+            /*leading-tight*/
+            border-width: 2px;
+            /*border-2*/
+            border-radius: .25rem;
+            border-color: #edf2f7;
+            /*border-gray-200*/
+            background-color: #edf2f7;
+            /*bg-gray-200*/
+        }
+
+        /*Row Hover*/
+        table.dataTable.hover tbody tr:hover,
+        table.dataTable.display tbody tr:hover {
+            background-color: #ebf4ff;
+            margin-top: 3em;
+            /*bg-indigo-100*/
+        }
+
+        /*Pagination Buttons*/
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            font-weight: 700;
+            /*font-bold*/
+            border-radius: .25rem;
+            /*rounded*/
+            border: 1px solid transparent;
+            /*border border-transparent*/
+        }
+
+        /*Pagination Buttons - Current selected */
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+            color: #fff !important;
+            /*text-white*/
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+            /*shadow*/
+            font-weight: 700;
+            /*font-bold*/
+            border-radius: .25rem;
+            /*rounded*/
+            background: #667eea !important;
+            /*bg-indigo-500*/
+            border: 1px solid transparent;
+            /*border border-transparent*/
+        }
+
+        /*Pagination Buttons - Hover */
+        .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+            color: #fff !important;
+            /*text-white*/
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+            /*shadow*/
+            font-weight: 700;
+            /*font-bold*/
+            border-radius: .25rem;
+            /*rounded*/
+            background: #667eea !important;
+            /*bg-indigo-500*/
+            border: 1px solid transparent;
+            /*border border-transparent*/
+        }
+
+        /*Add padding to bottom border */
+        table.dataTable.no-footer {
+            border-bottom: 1px solid #e2e8f0;
+            /*border-b-1 border-gray-300*/
+            margin-top: 0.75em;
+            margin-bottom: 0.75em;
+        }
+
+        /*Change colour of responsive icon*/
+        table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+        table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+            background-color: #667eea !important;
+            /*bg-indigo-500*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <div class=" tw-bg-orange mobile:tw-h-[120px]">
+            <div class="tw-px-4 tw-mx-auto tw-max-w-screen-xl sm:tw-px-6 lg:tw-px-3">
+                <div class="tw-flex tw-items-center tw-justify-between tw-h-16 tw-font-poppins">
+                    <div class="mobile:tw-mt-[50px] tw-w-full sm:tw-flex-1 tablet:tw-flex-1 lg:tw-flex-1 xl:tw-flex-1">
+                        <a class="tw-block tw-text-teal-600" href="/">
+                            <img src="src/img/logo-header.png" class="tw-h-10 tw-max-w-lg tw-items-center" alt="">
+                            <span
+                                class="tw-not-sr-only tw-text-white tw-text-sm tw-max-w-lg sm:tw-sr-only tablet:tw-sr-only lg:tw-sr-only xl:tw-sr-only">Minggu,
+                                23 Oktober
+                                2022</span>
+                        </a>
+                    </div>
+
+                    <div class="md:tw-flex md:tw-items-center mobile:tw-hidden">
+                        <div class="tw-items-center tw-gap-2">
+                            <div class="sm:tw-gap-2 sm:tw-flex">
+                                <a class="tw-bg-orange-500 tw-text-white tw-transition hover:tw-text-gray-400 tw-duration-300 tw-px-7 sm:tw-px-3.5 tw-py-2.5"
+                                    href="index.html">
+                                    Beranda
+                                </a>
+                                <a class="tw-bg-orange-500 tw-text-white tw-transition hover:tw-text-gray-400 tw-duration-300 tw-px-7 sm:tw-px-3.5 tw-py-2.5"
+                                    href="pesanan.html">
+                                    Pesanan
+                                </a>
+                                <a class="tw-rounded-xl tw-bg-orange-500 tw-outline tw-outline-white tw-outline-2 tw-text-white hover:tw-bg-orange-600 tw-duration-300 tw-px-9 tw-py-2.5 tw-btn-block"
+                                    href="login.html">
+                                    Masuk
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <section class="tw-font-poppins tw-pb-16">
+        <div class="tw-container tw-mx-auto tw-mt-12">
+            <div class="tw-mx-3">
+                <div class="tw-w-full tw-px-4">
+                    <div class="tw-mx-auto tw-max-w-xl tw-text-center">
+                        <p class="tw-text-base tw-font-poppins tw-font-bold lg:tw-text-3xl xl:tw-text-3xl">
+                            Konfirmasi Pemesanan
+                        </p>
+                    </div>
+                </div>
+                <!--Container-->
+                <div class="tw-mt-5 tw-w-full md:tw-w-4/5 xl:tw-w-3/5 tw-mx-auto">
+                    <!--Card-->
+                    <div id='recipients' class="tw-p-8 tw-mt-6 lg:tw-mt-0 tw-rounded tw-shadow tw-bg-white">
+                        <table id="example" class="stripe tw-hover"
+                            style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
+                            <thead>
+                                <tr>
+                                    <th data-priority="1">Kode Pemesanan</th>
+                                    <th data-priority="2">Nama Konsumen</th>
+                                    <th data-priority="3">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>INV/20221126/L0001/P0001</td>
+                                    <td>Ilyas</td>
+                                    <td>
+                                        <a class="tw-bg-gray-500 tw-p-1.5 tw-rounded-lg tw-text-white"
+                                            data-modal-toggle="staticModal">Detail</a>
+                                        <a href="list-detail-pemesanan.html"
+                                            class="tw-bg-red-600 tw-p-1.5 tw-rounded-lg tw-text-white">Tolak</a>
+                                        <a href=""
+                                            class="tw-bg-green-400 tw-p-1.5 tw-rounded-lg tw-text-white">Terima</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                </tr>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                </tr>
+                                <tr>
+                                    <td>Donna Snider</td>
+                                    <td>Customer Support</td>
+                                    <td>New York</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--/Card-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/container-->
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <!--Datatables -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var table = $('#example').DataTable({
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        });
+    </script>
+</body>
+
+</html>
